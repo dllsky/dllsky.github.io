@@ -1,0 +1,138 @@
+.promo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1200px) {
+  .promo {
+    width: 1200px;
+  }
+}
+
+.promo .promo__title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: -20px;
+    margin-top: 20px;
+    border: 2px solid #BDB76B;
+    padding: 20px;
+    width: 200px;
+    background-color: #000000;
+    border-radius: 10px;
+    color: #BDB76B;
+    font-weight: bold;
+    margin: 0 auto -30px;
+}
+
+@media (min-width: 680px) {
+  .promo .promo__title {
+    width: 277px;
+    font-size: 26px;
+  }
+}
+
+.promo .promo__title.promo__title--main {
+  font-size: 50px;
+  text-align: center;
+  color: #ff0000;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+@media (min-width: 680px) {
+  .promo .promo__title.promo__title--main {
+    color: #000000;
+  }
+}
+
+.promo .promo__img {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 90px;
+  animation-name: fly;
+  animation-duration: 16000ms;
+  animation-iteration-count: infinite;
+}
+
+@media (min-width: 1000px) {
+  .promo .promo__img {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@keyframes fly {
+  from {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(15px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+
+  75% {
+    transform: translateY(15px);
+  }
+  to {
+    transform: translateY(0px)
+  }
+}
+
+.promo .promo__img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 1200px) {
+  .promo .promo__img img {
+    width: 100%;
+    height: 130%;
+  }
+}
+
+.promo__img-wrapper {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 1000px) {
+.promo__img-wrapper {
+  width: 500px;
+  height: 500px;
+}
+}
+
+
+.promo__link {
+  text-decoration: none;
+  color: #FF0000;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Candara', sans-serif;
+  border: 2px solid #FF0000;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  margin: 20px auto 30px;
+  background-color: #000000;
+}
+
+@media (min-width: 1200px) {
+  .promo__link {
+    width: 330px;
+    font-size: 32px;
+  }
+}
+
+.promo-wrapper {
+  margin: 0 auto;
+}
